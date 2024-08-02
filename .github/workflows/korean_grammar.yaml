@@ -2,16 +2,14 @@ name: Check korean grammar on pull request comment
 
 on:
   issue_comment:
-    types:
-      - created
+    types: [created]
 
 jobs:
   grammar_check:
-    if: ${{ github.event.issue.pull_request && github.event.comment.body == '/맞춤법'}}
     runs-on: ubuntu-latest
     steps:
-    - name: "맞춤법 검사"
-      uses: onestone9900/korean-grammar-action@v0.0.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PASSPORT_KEY: ${{ secrets.PASSPORT_KEY }}
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Deploy
+        run: |
+          echo "Deploying..."
