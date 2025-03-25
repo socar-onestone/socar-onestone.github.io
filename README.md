@@ -1,6 +1,4 @@
-# SOCAR Tech Blog 
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsocar-inc%2Fsocar-inc.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+# SOCAR Tech Blog
 
 [SOCAR Tech Blog](https://tech.socarcorp.kr/) 를 위한 Github Repository입니다.
 
@@ -69,26 +67,36 @@
   * 일반적으로, 작성자가 직접 아래 과정 (2.2~) 을 따라가면서 PR 을 생성합니다.
   * 예외 : 작성자가 github 계정이 없는 경우, 먼저 노션 페이지에 글을 작성하고 블로그 관리자가 최종 퍼블리싱 전에 PR을 생성합니다. 
 
-### 2.2. GitHub Repo Fork 하고 Clone 받기
+### 2.2. GitHub Repo 최초 연결하기
+- 깃헙 웹페이지
+  - 회사 깃헙 개인 계정으로 이동합니다.
+    - 예) https://github.com/socar-onestone
+  - 상단에 Repositories 탭을 클릭합니다.
+  - 오른쪽에 New 버튼을 클릭합니다.
+    - Repository name에 `{본인 Github 계정}.github.io`를 입력합니다.
+      - 예) socar-onestone.github.io
+    - Repository는 Public으로 설정합니다. (github 무료 계정은 public만 Pages를 호스팅 가능)
+    - Create repository 버튼을 클릭합니다.
+  - 생성 한 레포지토리의 Settings > Pages에서 Source를 `Github Actions` 로 설정해줍니다.
+      ![Github Action 설정](/img/readme/pages-build.png)
+- 로컬 터미널
+  - 각 노트북의 터미널을 실행하여 위에 생성한 레포지토리를 clone 받습니다.
+    - `git clone {레포지토리 주소}`
+    - 예) git clone git@github.com:socar-onestone/socar-onestone.github.io.git
+  - cd 명령어로 해당 레포지토리로 이동합니다.
+    - 예) `cd socar-onestone.github.io`
+  - 다음 명령어를 사용하여 공식 블로그 레포지토리를 upstream으로 추가합니다.
+    - `git remote add upstream git@github.com:socar-inc/socar-inc.github.io.git`
+  - 다음 명령어를 사용하여 upstream이 생긴것을 확인합니다.
+    - `git remote -v`
+  - 다음 명령어를 사용하여 upstream의 master브랜치에 최신 정보를 가져옵니다.
+    - `git fetch upstream master`
+  - 다음 명령어를 사용하여 master 브랜치를 로컬에 생성합니다.
+    - `git checkout -b master upstream/master`
+  - 다음 명령어를 사용하여 깃헙에 있는 레포지토리를 downstream으로 만들어 줍니다.
+    - `git push origin master`
 
-- 이 [GitHub Repository](https://github.com/socar-inc/socar-inc.github.io)를 본인의 계정으로 Fork 합니다.
-    - 이 때, Repository name 을 `{본인 Github 계정}.github.io` 으로 바꿔줍니다. 
-    - Copy the master branch only 를 `체크 해제` 해줍니다.
-  ![레포지토리 Fork 하고 Rename하기](/img/readme/fork.png)
-
-- Fork 한 레포지토리의 Settings > Pages에서 Source를 `Github Actions` 로 설정해줍니다.
-  ![Github Action 설정](/img/readme/pages-build.png)
-
-- Actions로 들어가서 `I understand my workflows, go ahead an enabled them` 을 클릭합니다.
-  ![Workflow 설정](/img/readme/enable-workflow.png)
-
-- Fork 받은 본인의 Repository를 clone 합니다.
-
-  ```bash
-  $ git clone git@github.com:{본인 Github 계정}/{본인 Github 계정}.github.io.git
-  ```
-
-
+### 2.3. GitHub Repo의 새로운 내용 받아오기
 
 ### 2.3. 글 작성 및 확인하기
 - `master` branch 에서 작업합니다.
