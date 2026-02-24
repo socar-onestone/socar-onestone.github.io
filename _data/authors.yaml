@@ -228,7 +228,7 @@ bbiyak:
 onestone:
   name: 원스톤
   image: '/assets/authors/onestone.jpeg'
-  position: 애셋(Asset)팀 Tech Leader
+  position: 자산개발팀(Asset)팀 Tech Leader
   introduction: 쏘카의 자산(Asset)인 존과 차량관련 개발을 하고 있습니다.
   links:
     blog: 'https://onestone9900.github.io/'
@@ -238,7 +238,7 @@ haroo:
   name: 하루
   image: '/assets/authors/haroo.png'
   position: Asset팀 프론트엔드 개발자
-  introduction: 쏘카의 애셋(Asset)팀에서 프론트엔드 개발을 맡고 있습니다.
+  introduction: 쏘카의 자산개발팀(Asset)팀에서 프론트엔드 개발을 맡고 있습니다.
 
 rex:
   name: 렉스
@@ -288,3 +288,52 @@ rudy:
   introduction: 쏘카에서 데이터 엔지니어링 업무를 하고 있습니다.
   links:
     linkedin: 'https://www.linkedin.com/in/yangseunghyeon/'
+
+arnold:
+  name: 아놀드
+  image: '/assets/authors/arnold.png'
+  position: FE CORE 팀 프론트엔드 개발자
+  introduction: 쏘카의 프론트엔드 공통영역 개발을 하고 있습니다.
+  links:
+    blog: "https://www.cloud-sanghun.com/"
+    linkedin: "https://www.linkedin.com/in/sanghun-lee-905a84144/"
+
+sio:
+  name: 시오
+  image: '/assets/authors/sio.png'
+  position: QA Manager
+  introduction: 테스트 전략과 자동화에 진심이며 서비스 품질 향상을 위해 고민하는 QA입니다.
+  links:
+    linkedin: 'https://www.linkedin.com/in/jiye-jeon-40a813254/'
+
+abel:
+  name: 아벨
+  image: '/assets/authors/abel.png'
+  position: iOS 개발자
+  introduction: 쏘카에서 iOS 앱 개발을 하고 있습니다.
+  links:
+    linkedin: 'https://www.linkedin.com/in/%EC%83%81%EC%9A%B0-%EA%B9%80-55a85a238/'
+
+aron:
+  name: 아릉
+  image: '/assets/authors/aron.png'
+  position: Mobile 개발자
+  introduction: 바람직한 체계를 구축하고 그로부터 다수의 행복에 기여할 수 있는 선순환을 만드는 것을 추구합니다.
+  links:
+    linkedin: 'https://www.linkedin.com/in/dongheekim85/'
+
+sebastian:
+  name: 세바스찬
+  image: '/assets/authors/default.png'
+  position: 백엔드 개발자
+  introduction: 모두의주차장에서 백엔드 개발을 하고 있습니다.
+  links:
+    linkedin: 'https://www.linkedin.com/in/seobew/'
+
+ruru:
+  name: 루루
+  image: '/assets/authors/default.png'
+  position: 백엔드 개발자
+  introduction: 모두의주차장에서 백엔드 개발을 하고 있습니다.
+  links:
+    linkedin: 'https://www.linkedin.com/in/ansrl0107/'
